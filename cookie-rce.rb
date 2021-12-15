@@ -19,7 +19,7 @@ def gen_cookie_with_digest(cookie_data)
   "#{cookie}--#{digest}" 
 end 
 
-# ActiveSupport Deprecation Proxy class (Deserialization sink) 
+# ActiveSupport Deprecation Proxy class used to instantiate the new method via "method_missing" 
 class ActiveSupport 
   class Deprecation 
     class DeprecatedInstanceVariableProxy 
