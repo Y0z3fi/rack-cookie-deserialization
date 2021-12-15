@@ -19,7 +19,7 @@ def gen_cookie_with_digest(cookie_data)
   "#{cookie}--#{digest}" 
 end 
 
-# Vulnerable ActiveSupport Deprecation Proxy class 
+# ActiveSupport Deprecation Proxy class (Deserialization sink) 
 class ActiveSupport 
   class Deprecation 
     class DeprecatedInstanceVariableProxy 
